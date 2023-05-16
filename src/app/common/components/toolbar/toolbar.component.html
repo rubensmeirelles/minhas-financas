@@ -1,0 +1,22 @@
+<mat-toolbar>
+    <span>Minhas Finanças</span>
+    <span class="example-spacer"></span>
+    <div *ngFor="let m of menu">
+        <a routerLink="{{m.rota}}" routerLinkActive="active">
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                <mat-icon>{{m.icon}}</mat-icon> {{m.descricao}}
+            </button>
+        </a>
+    </div>
+        <!-- <a routerLink="categorias" routerLinkActive="active">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+              <mat-icon>category</mat-icon> Categorias
+            </button>
+        </a>
+        <a routerLink="entradas" routerLinkActive="active">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+              <mat-icon>monetization_on</mat-icon> Entradas
+            </button>
+        </a> -->
+  </mat-toolbar>
+  

@@ -1,0 +1,22 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  button{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    transition: .5s;
+  }
+
+  button:hover{
+    background-color: #999;
+  }
+
+  .active button{
+    background-color: #999;
+  }
